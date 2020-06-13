@@ -3,5 +3,8 @@
 # Група на код
 Ја добив групата 1
 
+# Control flow diagram
+![](cfg.png)
+
 
 
