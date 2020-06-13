@@ -13,7 +13,7 @@
 ![](everyPath.png)
 
 # Тест случаи според Every Branch
-...
+![](everyBranch.png)
 
 # Објаснување на тестовите
 
