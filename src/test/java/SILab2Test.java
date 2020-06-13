@@ -59,9 +59,17 @@ class SILab2Test {
         User user3 = new User("goce", "snagata", "random@yahoo.com");
         assertEquals(true, testunit.function(user3, initList("c1c2c3", "javascript", "python")));
 
+        // D1->D2->(E->F->G->H->D3->D2)->I->K (ako nema @)
+        User user4 = new User("nikola", "1234567", "randomemailgmail.com");
+        assertEquals(false, testunit.function(user4, initList("random1", "tome", "drake")));
+
+        // D1->D2->(E->F->G->H->D3->D2)->I->K (ako nema .)
+        User user5 = new User("nikola", "admin", "randomemail@gmailcom");
+        assertEquals(false, testunit.function(user4, initList("generate", "future", "name")));
+
         // D1->D2->(E->F->G->H->D3->D2)->I->K --- expect false (ako gi nema @ i .)
-        User user4 = new User("nikola", "1234567", "randomemailgmailcom");
-        assertEquals(false, testunit.function(user4, initList("angele", "rabota", "ime")));
+        User user6 = new User("nikola", "unittest1234", "randomemailgmailcom");
+        assertEquals(false, testunit.function(user6, initList("angele", "rabota", "ime")));
 
     }
 
